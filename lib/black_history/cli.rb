@@ -30,16 +30,18 @@ class BlackHistory::CLI
   #end 
   
   def user_month
-    month_chosen = gets.strip
-    binding.pry 
-    # if valid_input(month_chosen.to_i, @months)
-    #end 
+    month_chosen = gets.strip.to_i
+    show_events(month_chosen) if valid_input(month_chosen.to_i, @months)
   end 
   
   def valid_input(input,data)
-    input <= data.length && input > 0 
+    input.to_i <= data.length && input > 0 
   end
   
-    
-end
+  def show_events(month_chosen)
+    month = @months[month_chosen -1]
+    puts "These are the events for #{month}"
+    binding.pry
+  end
+end 
 
