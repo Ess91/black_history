@@ -31,6 +31,9 @@ class BlackHistory::CLI
   
   def user_month
     month_chosen = gets.strip
+    binding.pry 
+    # if valid_input(month_chosen.to_i, @months)
+    #end 
   end 
   
   def valid_input(input,data)
