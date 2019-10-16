@@ -56,4 +56,5 @@ class BlackHistory::CLI
     #binding.pry
   end
 end 
+end 
 
