@@ -11,7 +11,7 @@ class BlackHistory::CLI
   end 
   
   def locations 
-    @locations = BlackHistory::Location.all 
+    @locations = [] 
 end
 
 
