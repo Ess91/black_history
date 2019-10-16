@@ -7,6 +7,11 @@ class BlackHistory::CLI
     
   end 
   
+  #def months_available
+   # @months = BlackHistory::Month.all 
+    #binding.pry 
+  #end 
+  
  # def events
   #  @events = []
   #end 
@@ -41,7 +46,7 @@ class BlackHistory::CLI
   def show_events(month_chosen)
     month = @months[month_chosen -1]
     puts "These are the events for #{month}"
-    binding.pry
+    #binding.pry
   end
 end 
 
