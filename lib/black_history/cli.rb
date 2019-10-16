@@ -11,8 +11,7 @@ class BlackHistory::CLI
   end 
   
   def locations 
-    #scrapped later 
-    @locations = ["Camden", "Islington", "Hackney", "Southwark", "Haringey"]
+    @locations = BlackHistory::Location.all 
 end
 
 
@@ -40,14 +39,4 @@ def show_events(chosen_location)
   puts "Here are a list of events for #{location} chosen"
   binding.pry 
 end
-
-#def get_months
- # @months = ["January", "Feburary", "March"]
-#end 
-
-#def list_months
- # @months.each.with_index(1) do |month, index|
-  #  puts "#{index}. #{month}"
-  #end 
-#end 
-#end 
+end 

@@ -1,0 +1,3 @@
+class BlackHistory::Location
+  
+end
