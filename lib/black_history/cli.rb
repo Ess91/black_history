@@ -1,6 +1,6 @@
 class BlackHistory::CLI
   def call
-    puts "Welcome to the Black History App!"
+    puts "Welcome to the Black History London!"
     locations
     user_locations
     get_user_locations
