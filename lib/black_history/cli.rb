@@ -18,6 +18,7 @@ class BlackHistory::CLI
   
   def months_available
     @months = ['September', 'October', 'November']
+    binding.pry
   end 
   
   def months_event
