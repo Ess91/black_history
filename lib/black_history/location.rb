@@ -8,5 +8,6 @@ def initialize(name)
 end 
   
   def self.all 
+     BlackHistory::Scraper.scrape_locations if @@all.empty?
   end 
 end 

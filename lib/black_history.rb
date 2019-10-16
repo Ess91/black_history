@@ -5,6 +5,7 @@ require_relative "./black_history/scraper"
 
 require 'pry'
 require 'nokogiri'
+require 'open-uri'
 
 module BlackHistory
   class Error < StandardError; end
