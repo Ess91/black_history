@@ -26,14 +26,18 @@ def user_locations
 
 def get_user_locations
   chosen_location = gets.strip
-  binding.pry 
-  #if valid_input (chosen_location.to_i, @locations)
-  #end
+  if valid_input (chosen_location, @locations)
+    show_events(chosen_location)
+  end
 end 
 
 def valid_input (input, data)
-  input <= @locations.length && input > 0 
+  input.to_i <= @locations.length && input.to_i > 0 
 end
+
+def show_events(chosen_location)
+  puts "Here are a list of events for #{location} chosen"
+  binding.pry 
 end
 
 #def get_months
