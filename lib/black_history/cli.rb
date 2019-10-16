@@ -37,6 +37,5 @@ end
 def show_events(chosen_location)
   location = @locations[chosen_location -1]
   puts "Here are a list of events for #{location} chosen"
-  binding.pry 
 end
 end 
