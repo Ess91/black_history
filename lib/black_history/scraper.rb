@@ -5,7 +5,7 @@ require 'open-uri'
 #class BlackHistory::Scraper
   #def self.scrape_locations
     doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/listings/region/greater-london/"))
-    doc.css(".col-12.post-list.listings-list").each do |page|
+    doc.css(".post-list-item--article").each do |page| 
 #page.each do |data|
    locations = page.css("span.post-listings-list-tax").text
    dates = page.css("span.post-listings-list-date").text 

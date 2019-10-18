@@ -1,11 +1,12 @@
 class BlackHistory::Location
   @@all = []
-  attr_accessor :name, :dates, :events
+  attr_accessor :name, :dates, :description, :event_url
 
 def initialize(name)
   @name = name
   @dates = dates
-  @events = events
+  @event_url = event_url
+  @description = []  
   @@all << self 
 end 
   
