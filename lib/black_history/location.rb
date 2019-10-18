@@ -1,12 +1,13 @@
-class BlackHistory::Location
+#class BlackHistory::Location
+class Location
   @@all = []
-  attr_accessor :name, :dates, :description, :event_url
+  attr_accessor :events, :dates, :locations, :event_url
 
-def initialize(name)
-  @name = name
+def initialize
+  #@events = events 
   @dates = dates
+  @locations = locations
   @event_url = event_url
-  @description = []  
   @@all << self 
 end 
   
