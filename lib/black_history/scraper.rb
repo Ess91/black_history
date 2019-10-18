@@ -14,7 +14,12 @@ require_relative './location'
    location.event_url = page.css("a").attr("href").value
    binding.pry 
  
-
+ second_level_scrape(event_url)
+    puts "#{page.css(".post-listings-list-title").text}"
+    puts "#{page.css("span.post-listings-list-tax").text}"
+    puts "#{page.css("span.post-listings-list-date").text}"
+    puts "#{page.css("a").attr("href").value}"
+  end
 end 
  # events = doc.css(".post-listings-list-title")
   # events_url = events.css("a").attr("href").value
