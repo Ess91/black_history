@@ -2,7 +2,7 @@ require 'pry-nav'
 require 'nokogiri'
 require 'open-uri'
 
-#class BlackHistory::Scraper
+class BlackHistory::Scraper
   #def self.scrape_locations
     doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/listings/region/greater-london/"))
     doc.css(".post-list-item--article").each do |page| 
@@ -11,6 +11,7 @@ require 'open-uri'
    dates = page.css("span.post-listings-list-date").text 
    events = page.css("h2.post-listings-list-title").text
    binding.pry 
+ #  BlackHistory.new(name)
 
 end 
  # events = doc.css(".post-listings-list-title")
