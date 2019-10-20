@@ -41,11 +41,34 @@ end
   #min_value = 1
 #end 
 #end 
+ # def valid_input(input, data)
+  #  input.to_i <= data.length && input.to_i > 0
+  #end
 
-def find_events(index)
-    Oct_BlackHistory.each_with_index do |events, i|
-    #i represents an index as well
-      index == i
+def find_events(location)
+ Oct_BlackHistory.all.select do |event|
+   location == events.locations
+  # binding.pry
+  # events.events.each_with_index do |data, index|
+   end
+   puts "#{events}"
+ end
+ 
+ 
+   def show_events_for(chosen_location)
+    location = Oct_BlackHistory[chosen_location - 1]
+    location.get_events
+    puts "Here are events for #{location.locations}"
+    location.events.each.with_index(1) do |event, index|
+      puts "#{index}. #{location.events}"
+    end
+    get_user_event(month)
   end
-puts "#{events}"
-end
+  
+  def get_user_event(month)
+    puts "Choose an event to see more details."
+    input = gets.strip
+    event = location.events[input.to_i - 1]
+    event.get_event_details
+    show_event_details(event)
+  end

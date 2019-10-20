@@ -15,6 +15,8 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-nav (0.3.0)
+      pry (>= 0.9.10, < 0.13.0)
     rake (10.5.0)
 
 PLATFORMS
@@ -24,6 +26,7 @@ DEPENDENCIES
   black_history!
   bundler (~> 2.0)
   pry
+  pry-nav
   rake (~> 10.0)
 
 BUNDLED WITH
