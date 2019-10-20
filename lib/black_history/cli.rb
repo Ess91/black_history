@@ -96,28 +96,17 @@ class BlackHistory::CLI
 end 
 
  def find_events
-    Oct_BlackHistory.each.with_index do |events, i|
-      index == i
-  end
-puts "#{events}"
-end
-end 
+   events = Oct_BlackHistory.find_all
+ end
+ end 
+   
+    #Oct_BlackHistory.find do |event, index|
+     # location == events.locations
+  #end
+#puts "#{events}"
+#end
+#end 
 
-   # def display_events
-   #   Oct_BlackHistory.each_with_index(1) do |events, index|
-    #    puts "#{index}. #{location.events}"
-     # end
-    #end 
-  #end 
-      
-    #print_location(input)
-
-  #  puts ""
-   # puts "What location would you like more information on?"
-    #input = gets.strip
-
-    #events = Oct_BlackHistory.find(input.to_i)
-
-    #print_restaurant(events)
+   
 
   
