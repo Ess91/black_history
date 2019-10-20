@@ -4,7 +4,7 @@ class BlackHistory::CLI
   def call
     welcome
     display_locations
-    #user_input
+    user_input
     find_events("Greenwich")
     #display_dates
     #display_times
@@ -30,10 +30,11 @@ end
   #  puts "Select event"
   #end 
   
-  #def user_input
-   # input = gets.strip
-  #end 
-#end 
+  def user_input
+     value = nil
+     value = gets.chomp
+     index = value.to_i - 1
+   end
 
 #def valid_response(input)
  # max_value = Oct_BlackHistory.all.length
@@ -41,11 +42,10 @@ end
 #end 
 #end 
 
-def find_events(location)
-  Oct_BlackHistory.all.select do |events|
-    location == events.locations 
-   # binding.pry
-   # events.events.each_with_index do |data, index|
-      puts "#{events}"
-    end 
-  end 
+def find_events(index)
+    Oct_BlackHistory.each_with_index do |events, i|
+    #i represents an index as well
+      index == i
+  end
+puts "#{events}"
+end
