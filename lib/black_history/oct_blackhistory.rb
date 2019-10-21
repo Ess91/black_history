@@ -1,5 +1,5 @@
-#class BlackHistory::Location
 class Oct_BlackHistory
+  
   @@all = []
   attr_accessor :events, :dates, :locations, :event_url, :descriptions
 
@@ -16,4 +16,5 @@ end
      @@all 
   end 
 end 
+
 

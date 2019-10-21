@@ -1,3 +1,5 @@
+require 'pry'
+
 class BlackHistory::CLI
 
 
@@ -79,6 +81,7 @@ class BlackHistory::CLI
     Oct_BlackHistory.all.each.with_index (1) do |location, index|
       puts "#{index}. #{location.locations}"
   end 
+#binding.pry 
 end 
 
  def user_input
@@ -93,20 +96,27 @@ def valid_response
   min_value = 1
 end 
 
+
+
   def display_events
-    puts "Here are events for #{location.locations}"
-    location.events.each.with_index(1) do |event, index|
+    #location = location.events
+   # puts "Here are events for #{location.locations}"
+    Oct_BlackHistory.all.each.with_index (1) do |event, index|
+    #location.events.each.with_index(1) do |event, index|
       puts "#{index}. #{event}"
     end
     end
-  end
     
-   # def find_events
+  end
+  
+ 
+    
+    #def display_events(location)
  #Oct_BlackHistory.all.select do |event|
   # location == events.locations
-  # binding.pry
+   #binding.pry
    #events.events.each_with_index do |data, index|
-  # end
+   #end
    #puts "#{events}"
  #end
 #end
