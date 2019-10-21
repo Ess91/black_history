@@ -62,7 +62,8 @@ class BlackHistory::CLI
     start
     user_input
     valid_response
-   # show_events_for(chosen_location)
+    #find_events
+    display_events
     #find_events
   end 
   
@@ -95,19 +96,31 @@ end
   def display_events
     puts "Here are events for #{location.locations}"
     location.events.each.with_index(1) do |event, index|
-      puts "#{index}. #{location.events}"
-      
+      puts "#{index}. #{event}"
     end
     end
-end
-# def find_events
+  end
+    
+   # def find_events
+ #Oct_BlackHistory.all.select do |event|
+  # location == events.locations
+  # binding.pry
+   #events.events.each_with_index do |data, index|
+  # end
+   #puts "#{events}"
+ #end
+#end
+#end 
+
+ #def find_events
  #  events = Oct_BlackHistory.find_all
  #end
  #end 
    
-    #Oct_BlackHistory.find do |event, index|
-     # location == events.locations
-  #end
+  #  Oct_BlackHistory.find do |event, index|
+   #   location == events.locations
+ # end
 #puts "#{events}"
 #end
 #end
+#end 
