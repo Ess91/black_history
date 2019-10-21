@@ -55,29 +55,15 @@ class BlackHistory::CLI
 # end
  
  
- #  def show_events_for(chosen_location)
-  #  location = Oct_BlackHistory[chosen_location - 1]
-   # location.get_events
-    #puts "Here are events for #{location.locations}"
-    #location.events.each.with_index(1) do |event, index|
-     # puts "#{index}. #{location.events}"
-    #end
-    #get_user_event(month)
-  #end
-  
-#  def get_user_event(month)
- #   puts "Choose an event to see more details."
-  #  input = gets.strip
-   # event = location.events[input.to_i - 1]
-    #event.get_event_details
-    #show_event_details(event)
-  #end
   
   
   def call 
     welcome
     start
-    find_events
+    user_input
+    valid_response
+   # show_events_for(chosen_location)
+    #find_events
   end 
   
     def welcome 
@@ -91,22 +77,37 @@ class BlackHistory::CLI
     puts "Please select the location you wish to see:"
     Oct_BlackHistory.all.each.with_index (1) do |location, index|
       puts "#{index}. #{location.locations}"
-    #input = gets.strip.to_i
   end 
 end 
 
- def find_events
-   events = Oct_BlackHistory.find_all
- end
- end 
+ def user_input
+     value = nil
+     value = gets.chomp
+     index = value.to_i - 1
+   end
+  
+
+def valid_response
+  max_value = Oct_BlackHistory.all.length
+  min_value = 1
+end 
+
+  def display_events
+    puts "Here are events for #{location.locations}"
+    location.events.each.with_index(1) do |event, index|
+      puts "#{index}. #{location.events}"
+      
+    end
+    end
+end
+# def find_events
+ #  events = Oct_BlackHistory.find_all
+ #end
+ #end 
    
     #Oct_BlackHistory.find do |event, index|
      # location == events.locations
   #end
 #puts "#{events}"
 #end
-#end 
-
-   
-
-  
+#end
