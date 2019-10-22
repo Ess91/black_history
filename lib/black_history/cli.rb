@@ -35,7 +35,7 @@ end
    puts location.events
    puts location.dates 
    puts location.descriptions
-   puts location.event_url
+  
     end
     
    
