@@ -62,10 +62,11 @@ class BlackHistory::CLI
   def call 
     welcome
     start
-    user_input
-    valid_response
+    index = user_input 
+    location = Oct_BlackHistory.all[index]
+   # valid_response
     #find_events
-    display_events
+    display_events(location)
     #find_events
   end 
   
@@ -91,22 +92,24 @@ end
    end
   
 
-def valid_response
-  max_value = Oct_BlackHistory.all.length
-  min_value = 1
-end 
+#def valid_response
+ # max_value = Oct_BlackHistory.all.length
+#  min_value = 1
+#end 
 
 
 
-  def display_events
+  def display_events(location)
     #location = location.events
    # puts "Here are events for #{location.locations}"
-    Oct_BlackHistory.all.each.with_index (1) do |event, index|
+   puts location.events
+   # location.events.each.with_index (1) do |event, index|
     #location.events.each.with_index(1) do |event, index|
-      puts "#{index}. #{event}"
-    end
+     # puts "#{index}. #{event}"
+    #end
     end
     
+      
   end
   
  
