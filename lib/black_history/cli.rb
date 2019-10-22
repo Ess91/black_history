@@ -8,6 +8,7 @@ class BlackHistory::CLI
     index = user_input 
     location = Oct_BlackHistory.all[index]
     display_events(location)
+    menu
   end 
   
     def welcome 
@@ -31,21 +32,28 @@ end
    end
   
 
-#def valid_response
- # max_value = Oct_BlackHistory.all.length
-#  min_value = 1
-#end 
-
-
-
   def display_events(location)
    puts location.events
    puts location.dates 
    puts location.descriptions
    puts location.event_url
     end
+    
+    def menu
+      puts ""
+   puts "Would you like to see another location? Enter Y or N"
+
+    input = gets.strip.downcase
+    if input == "y"
+      start
+    elsif input == "n"
+      puts ""
+      puts "Enjoy Black History!"
+      exit
+    else
+      puts ""
+      puts "I don't understand that answer."
+      start
+    end
   end
-  
- 
-    
-    
+end
