@@ -117,4 +117,21 @@ doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings
 #end
 #end 
 
-    
+    #   def menu
+  #    puts ""
+  # puts "Would you like to see another location? Enter Y or N"
+
+   # input = gets.strip.downcase
+    #if input == "y" || input == "Y"
+     # start
+    #elsif input == "n" || input == "N"
+     # puts ""
+      #puts "Enjoy Black History!"
+      #exit
+    #else
+     # puts ""
+      #puts "Invalid."
+      #start
+    #end
+  #end
+#end 

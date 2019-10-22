@@ -53,28 +53,11 @@ end
       exit
       else
       puts ""
-      puts "I don't understand that answer."
+      puts "Invalid!"
       get_user_input
     end
   end
 end 
 
     
- #   def menu
-  #    puts ""
-  # puts "Would you like to see another location? Enter Y or N"
-
-   # input = gets.strip.downcase
-    #if input == "y" || input == "Y"
-     # start
-    #elsif input == "n" || input == "N"
-     # puts ""
-      #puts "Enjoy Black History!"
-      #exit
-    #else
-     # puts ""
-      #puts "I don't understand that answer."
-      #start
-    #end
-  #end
-#end 
+ 

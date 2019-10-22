@@ -19,7 +19,6 @@ require_relative './oct_blackhistory'
   doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/city-of-london/sunday-sorbet-caribbean-bruch/"))
     
   def event_url
-    location.descriptions = []
     location.descriptions = doc.css(".content-main p").map do |description|
     description.text
     end 
