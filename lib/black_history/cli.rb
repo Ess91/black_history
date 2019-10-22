@@ -7,10 +7,7 @@ class BlackHistory::CLI
     start
     index = user_input 
     location = Oct_BlackHistory.all[index]
-   # valid_response
-    #find_events
     display_events(location)
-    #find_events
   end 
   
     def welcome 
@@ -24,8 +21,7 @@ class BlackHistory::CLI
     puts "Please select the location you wish to see:"
     Oct_BlackHistory.all.each.with_index (1) do |location, index|
       puts "#{index}. #{location.locations}"
-  end 
-#binding.pry 
+  end
 end 
 
  def user_input
