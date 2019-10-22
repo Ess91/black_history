@@ -43,12 +43,11 @@ end
 
 
   def display_events(location)
-    
    puts location.events
-   
+   puts location.dates 
+   puts location.descriptions
+   puts location.event_url
     end
-    
-      
   end
   
  
