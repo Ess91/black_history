@@ -13,7 +13,6 @@ class BlackHistory::CLI
   
     def welcome 
     puts "Welcome to Black History London"
-    start 
   end 
   
 
