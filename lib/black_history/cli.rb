@@ -33,15 +33,18 @@ end
 
   def display_events(location)
    puts location.events
+   puts ""
    puts location.dates 
+   puts ""
+   puts location.event_url
+   puts ""
    puts location.descriptions
-  
     end
     
    
     
     def get_user_input
-    puts ""
+    #puts ""
     puts "Would you like to see another location? Enter Y or N"
     
     input = gets.strip.downcase
