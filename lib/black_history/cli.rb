@@ -32,13 +32,14 @@ end
   
 
   def display_events(location)
+    puts ""
    puts location.events
    puts ""
    puts location.dates 
    puts ""
    puts location.event_url
    puts ""
-   puts location.descriptions
+  # puts location.descriptions
     end
     
    
