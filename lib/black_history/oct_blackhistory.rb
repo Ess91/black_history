@@ -1,4 +1,4 @@
-class Oct_BlackHistory
+class BlackHistory::Oct_BlackHistory
   
   @@all = []
   attr_accessor :events, :dates, :locations, :event_url, :descriptions
@@ -15,6 +15,11 @@ end
   def self.all 
      @@all 
   end 
-end 
-
+  
+  BlackHistory::Oct_BlackHistory.all.map do |location|
+    return location.locations
+  end.uniq 
+  end
+ end 
+end
 

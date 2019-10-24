@@ -6,7 +6,7 @@ class BlackHistory::CLI
     welcome
     start
     index = user_input 
-    location = Oct_BlackHistory.all[index]
+    location = BlackHistory::Oct_BlackHistory.all[index]
     display_events(location)
     get_user_input
   end 
@@ -19,7 +19,8 @@ class BlackHistory::CLI
   def start
     puts ""
     puts "Please select the location you wish to see:"
-    Oct_BlackHistory.all.each.with_index (1) do |location, index|
+    BlackHistory::Scraper.scrape_locations
+    BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |location, index|
       puts "#{index}. #{location.locations}"
   end
 end 
@@ -49,9 +50,9 @@ end
     puts "Would you like to see another location? Enter Y or N"
     
     input = gets.strip.downcase
-    if input == "y" || input == "Y"
+    if input == "y" 
     call
-    elsif input == "n" || input == "N"
+    elsif input == "n"
       puts ""
       puts "Enjoy Black History!"
       exit
