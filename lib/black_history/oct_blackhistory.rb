@@ -18,8 +18,8 @@ end
   
   BlackHistory::Oct_BlackHistory.all.map do |location|
     return location.locations
-  end.uniq 
+  end #.uniq 
   end
- end 
-end
+# end 
+#end
 
