@@ -15,6 +15,7 @@ end
   def self.all 
      @@all 
   end 
+
   
   BlackHistory::Oct_BlackHistory.all.map do |location|
     return location.locations
