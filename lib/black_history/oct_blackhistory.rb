@@ -1,3 +1,5 @@
+require 'pry'
+
 class BlackHistory::Oct_BlackHistory
   
   @@all = []
@@ -16,6 +18,7 @@ end
      @@all
   end 
   
+ # binding.pry 
   
   BlackHistory::Oct_BlackHistory.all.map do |location|
     return location.locations
