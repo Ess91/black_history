@@ -23,6 +23,7 @@ end
   BlackHistory::Oct_BlackHistory.all.map do |location|
     return location.locations
   end
+ # locations.uniq!
   end
 # end 
 #end
