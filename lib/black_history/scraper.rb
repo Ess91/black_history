@@ -17,7 +17,7 @@ end
 
 
   
- # def self.second_scrape
+ # def self.second_scrape (iterate like the first level scraping)
  #def event_url
   #  page = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/lambeth/gamelan-poetry-workshops-lambeth-primary-offer-2019-2020/"))
     

@@ -18,11 +18,13 @@ end
      @@all
   end 
   
+  #Make the event the main instead of the locations, just to eliminate the duplication!
+  
  # binding.pry 
   
   BlackHistory::Oct_BlackHistory.all.map do |location|
     return location.locations
-  end
+  end.uniq!
  # locations.uniq!
   end
 # end 
