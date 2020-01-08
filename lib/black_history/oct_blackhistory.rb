@@ -22,10 +22,9 @@ end
   
  # binding.pry 
   
-  BlackHistory::Oct_BlackHistory.all.map do |location|
-    return location.locations
-  end.uniq!
- # locations.uniq!
+  BlackHistory::Oct_BlackHistory.all.map do |area|
+    return area.locations
+  end
   end
 # end 
 #end
