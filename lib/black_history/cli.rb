@@ -34,6 +34,15 @@ class BlackHistory::CLI
   #end
 #end 
 
+ # def start
+  #  puts ""
+   # puts "Please select the location you wish to see:"
+    #BlackHistory::Scraper.scrape_locations
+    #BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |area, index|
+    #  puts "#{index}. #{area.locations}"
+  #end
+#end 
+
   def start
     puts ""
     puts "Please select the location you wish to see:"
