@@ -23,7 +23,7 @@ end
  # binding.pry 
   
   BlackHistory::Oct_BlackHistory.all.map do |area|
-    return area.locations
+    return area.events 
   end
   end
 # end 
