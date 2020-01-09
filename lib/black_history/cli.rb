@@ -2,14 +2,6 @@ require 'pry'
 
 class BlackHistory::CLI
 
-  #def call 
-   # welcome
-    #start
-  #  index = user_input 
-   # location = BlackHistory::Oct_BlackHistory.all[index]
-  #  display_events(location)
-   # get_user_input
-  #end 
   
   def call 
     welcome
@@ -24,24 +16,6 @@ class BlackHistory::CLI
     puts "Welcome to Black History London"
   end 
   
-
- # def start
-  #  puts ""
-   # puts "Please select the location you wish to see:"
-    #BlackHistory::Scraper.scrape_locations
-    #BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |location, index|
-     # puts "#{index}. #{location.locations}"
-  #end
-#end 
-
- # def start
-  #  puts ""
-   # puts "Please select the location you wish to see:"
-    #BlackHistory::Scraper.scrape_locations
-    #BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |area, index|
-    #  puts "#{index}. #{area.locations}"
-  #end
-#end 
 
   def start
     puts ""
@@ -58,17 +32,6 @@ end
      index = value.to_i - 1
    end
   
-
-  #def display_events(location)
-    #puts ""
-   #puts location.events
-   #puts ""
-   #puts location.dates 
-   #puts ""
-   #puts location.event_url
-   #puts ""
-  # puts location.descriptions
-  #  end
     
   def display_info(area)
    puts ""
