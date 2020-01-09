@@ -13,9 +13,11 @@ class BlackHistory::Scraper
     area.event_url = page.css("a").attr("href").value 
   end 
  end 
-#end
- 
+end
+
+
 #binding.pry 
+
 
     #def self.second_scrape
      # doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
@@ -33,23 +35,7 @@ class BlackHistory::Scraper
  #end 
       
   
- # def self.second_scrape (iterate like the first level scraping)
- #def event_url
-   # page = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-af.rican-cultural-studies-18-week/"))
-    
-   # binding.pry 
-    
-    def self.second 
-      page = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
-      page.css(".content-main").each do |page|
-        area = BlackHistory::Oct_BlackHistory.new
-        area.descriptions = page.css(".content-main p").map do |description|
-          description.text 
-        end 
-        descriptions.join("\n")
-  end 
-end 
-end 
+ 
 
         
  # def event_url
