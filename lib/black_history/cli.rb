@@ -86,7 +86,7 @@ end
     
     def get_user_input
     #puts ""
-    puts "Would you like to see another location? Enter Y or N"
+    puts "Would you like to see another event? Enter Y or N"
     
     input = gets.strip.downcase
     if input == "y" 
