@@ -16,7 +16,7 @@ class BlackHistory::CLI
     start
     index = user_input 
     area = BlackHistory::Oct_BlackHistory.all[index]
-    display_events(area)
+    display_info(area)
     get_user_input
   end 
   
@@ -70,16 +70,18 @@ end
   # puts location.descriptions
   #  end
     
-     def display_events(location)
-    puts ""
-   puts location.events
+  def display_info(area)
    puts ""
-   puts location.dates 
+   puts area.events 
    puts ""
-   puts location.event_url
+   puts area.locations 
+   puts ""
+   puts area.dates 
+   puts ""
+   puts area.event_url
    puts ""
   # puts location.descriptions
-    end
+  end
    
     
     def get_user_input
