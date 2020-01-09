@@ -59,7 +59,18 @@ end
    end
   
 
-  def display_events(location)
+  #def display_events(location)
+    #puts ""
+   #puts location.events
+   #puts ""
+   #puts location.dates 
+   #puts ""
+   #puts location.event_url
+   #puts ""
+  # puts location.descriptions
+  #  end
+    
+     def display_events(location)
     puts ""
    puts location.events
    puts ""
@@ -69,7 +80,6 @@ end
    puts ""
   # puts location.descriptions
     end
-    
    
     
     def get_user_input
