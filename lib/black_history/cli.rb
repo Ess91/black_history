@@ -45,10 +45,10 @@ class BlackHistory::CLI
 
   def start
     puts ""
-    puts "Please select the location you wish to see:"
+    puts "Please select the events you wish to see:"
     BlackHistory::Scraper.scrape_locations
     BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |area, index|
-      puts "#{index}. #{area.locations}"
+      puts "#{index}. #{area.events}"
   end
 end 
 
