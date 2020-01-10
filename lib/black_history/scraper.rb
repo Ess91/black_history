@@ -18,26 +18,28 @@ class BlackHistory::Scraper
 
 
 #def event_url
-def self.second_scrape
-  doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
- doc.css(".content-main p").each do |doc|
-  doc.text
-  end
+#def self.second_scrape
+  #doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
+ #doc.css(".content-main p").each do |doc|
+  #doc.text
+ # end
 #  doc.join("\n")
  # binding.pry
-end
-end 
+#end
+#end 
 
 
-#def self.second_scrape
- # doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
- #area.description = doc.css(".content-main p").map do |description|
-  #description.text
-  #end
-  #descriptions.join("\n")
+def self.second_scrape
+  doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
+ description = doc.css(".content-main p").map do |description|
+  description.text
+  end
+  description.join("\n")
  # binding.pry
-#end
-#end
+end
+end
+#end 
+
     #def self.second_scrape
      # doc = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
      # doc.css(".content-main").map do |doc|
