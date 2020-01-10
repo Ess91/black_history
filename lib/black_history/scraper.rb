@@ -11,15 +11,15 @@ class BlackHistory::Scraper
     area.dates = page.css("span.post-listings-list-date").text 
     area.events = page.css("h2.post-listings-list-title").text
     area.event_url = page.css("a").attr("href").value 
-    
   end 
  end 
 #end
 
 
 
-def event_url
-  doc = Nokogiri::HTML(open(area.event_url))
+#def event_url
+def self.second_scrape
+  info = Nokogiri::HTML(open("https://www.blackhistorymonth.org.uk/article/listings/region/croydon/black-history-personal-empowerment-and-african-cultural-studies-18-week/"))
   descriptions = doc.css(".content-main p").map do |description|
   description.text
   end
