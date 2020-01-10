@@ -44,9 +44,10 @@ end
    puts ""
    puts area.event_url
    puts ""
-#   puts area.descriptions
+   puts area.descriptions
   end
  
+ #binding.pry 
      def information
   #  puts ""
     #puts "Please select the events you wish to see:"
