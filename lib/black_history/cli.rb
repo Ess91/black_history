@@ -9,6 +9,7 @@ class BlackHistory::CLI
     index = user_input 
     area = BlackHistory::Oct_BlackHistory.all[index]
     display_info(area)
+    information
     get_user_input
   end 
   
@@ -43,10 +44,19 @@ end
    puts ""
    puts area.event_url
    puts ""
-   puts area.descriptions
+#   puts area.descriptions
   end
-   
+ 
+     def information
+  #  puts ""
+    #puts "Please select the events you wish to see:"
+    BlackHistory::Scraper.second_scrape
+    BlackHistory::Oct_BlackHistory.all.each do |area|
+      puts "#{area.descriptions}"
+  end
+end 
     
+   
     def get_user_input
     #puts ""
     puts "Would you like to see another event? Enter Y or N"
