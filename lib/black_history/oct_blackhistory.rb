@@ -10,7 +10,7 @@ def initialize
   #@dates = dates
   #@locations = locations
   #@event_url = event_url
-  #@descriptions = descriptions
+ # @descriptions = descriptions
   @@all << self 
 end 
   
