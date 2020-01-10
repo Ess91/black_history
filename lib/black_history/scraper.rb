@@ -36,7 +36,7 @@ def self.second_scrape
   description.text
   end
   description.join("\n")
- # binding.pry
+#  binding.pry
 end
 end
 #end 
@@ -61,8 +61,9 @@ end
 
         
  # def event_url
-  #  area.descriptions = page.css(".content-main p").map do |description|
-   # description.text
+  #   doc = Nokogiri::HTML(open(event_url))
+   # area.descriptions = page.css(".content-main p").map do |description|
+    #description.text
     #end 
     #descriptions.join("\n")
   #end 
