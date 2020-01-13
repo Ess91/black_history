@@ -49,15 +49,7 @@ end
    puts area.descriptions
   end
  
- #binding.pry 
-     def information
-  #  puts ""
-    #puts "Please select the events you wish to see:"
-    BlackHistory::Scraper.second_scrape
-    BlackHistory::Oct_BlackHistory.all.each do |area|
-      puts "#{area.descriptions}"
-  end
-end 
+ 
     
    
     def get_user_input
