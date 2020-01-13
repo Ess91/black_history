@@ -8,10 +8,12 @@ class BlackHistory::CLI
     start
     index = user_input 
     area = BlackHistory::Oct_BlackHistory.all[index]
+    BlackHistory::Scraper.second_scrape(area)
     display_info(area)
-    information
+    #information
     get_user_input
   end 
+
   
     def welcome 
     puts "Welcome to Black History London"
