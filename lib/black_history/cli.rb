@@ -47,6 +47,7 @@ end
    puts area.event_url
    puts ""
    puts area.descriptions
+   puts ""
   end
  
  
