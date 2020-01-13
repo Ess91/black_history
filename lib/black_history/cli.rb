@@ -10,7 +10,6 @@ class BlackHistory::CLI
     area = BlackHistory::Oct_BlackHistory.all[index]
     BlackHistory::Scraper.second_scrape(area)
     display_info(area)
-    #information
     get_user_input
   end 
 
