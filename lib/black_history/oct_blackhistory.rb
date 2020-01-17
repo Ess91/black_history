@@ -25,6 +25,11 @@ end
   BlackHistory::Oct_BlackHistory.all.map do |area|
     return area.events 
   end
+  
+  def self.list_dates
+    self.all.each do |date| 
+  end 
+
   end
 # end 
 #end
