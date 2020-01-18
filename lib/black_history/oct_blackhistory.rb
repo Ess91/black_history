@@ -14,6 +14,7 @@ def initialize
   @@all << self 
 end 
   
+  
   def self.all 
      @@all
   end 
@@ -26,9 +27,9 @@ end
     return area.events 
   end
   
-  def self.list_dates
-    self.all.each do |date| 
-  end 
+#  def self.list_dates
+ #   self.all.each do |date| 
+#  end 
 
   end
 # end 
