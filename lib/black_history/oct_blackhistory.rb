@@ -27,9 +27,11 @@ end
     return area.events 
   end
   
-#  def self.list_dates
- #   self.all.each do |date| 
-#  end 
+#def self.list_dates
+#	Self.all.each.with_index (1) do |area, date|
+#puts “#{index}. #{area.dates}”
+#end 
+ 
 
   end
 # end 
