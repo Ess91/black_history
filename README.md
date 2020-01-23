@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1) Run `bin/blackhistory`
+2) Select which event you are interested in 
+3) The Name, Location, Dates, Event URL and descriptions will appear
+4) With the User prompt, if you would like to see another event, press "y" if not press "n" and this will exit the program 
 
 ## Development
 
