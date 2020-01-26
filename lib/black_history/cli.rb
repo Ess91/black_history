@@ -24,6 +24,7 @@ class BlackHistory::CLI
     puts "Please select the events you wish to see:"
     puts ""
     BlackHistory::Scraper.scrape_locations
+    #BlackHistory::Oct_BlackHistory.list_dates
     BlackHistory::Oct_BlackHistory.all.each.with_index (1) do |area, index|
       puts "#{index}. #{area.events}"
   end

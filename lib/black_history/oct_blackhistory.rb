@@ -28,8 +28,9 @@ end
   end
   
 #def self.list_dates
-#	Self.all.each.with_index (1) do |area, date|
-#puts “#{index}. #{area.dates}”
+#	self.all.each.with_index(1) do |event, index|
+#puts "#{index}. #{event.dates}"
+#end 
 #end 
  
 
