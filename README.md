@@ -3,7 +3,7 @@
 This Ruby Gem provides a CLI to view Black History events that will be showcasing throughout the year. This program allows users to select their chosen events and view details of that particular event that they have chosen. 
 
 
-![Black History_Gif](https://media.giphy.com/media/zStUMLrXsM0JgzhJje/giphy.gif | width=500)
+![Black History_Gif](https://media.giphy.com/media/zStUMLrXsM0JgzhJje/giphy.gif){:width="500px"}
 
 ## Installation
 
